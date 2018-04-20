@@ -13,16 +13,21 @@
 </head>
 <body>
     <header class="main-header">
-        <h1 id="logo"><strong>Martin Jarrin</strong></h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>          
-        </nav>
+            <h1 id="logo"><strong>Martin Jarrin</strong></h1>
+            <nav>
+                <div class="toggle">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
+
+                    <ul class="burger">
+                        <li><a href="../index.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>          
+                </nav>
     </header>
+
     <body>
     <main>
     <section id="work">
@@ -63,7 +68,15 @@
                 
             </ul>
     </footer>
-
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('.burger').toggleClass('active');
+        })
+    })
+    </script>
+   
    
     
 </body>

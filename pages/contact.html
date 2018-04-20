@@ -8,20 +8,24 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Acme|Dancing+Script|Kaushan+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
- </head>
+
 </head>
 <body>
     <header class="main-header">
         <h1 id="logo"><strong>Martin Jarrin</strong></h1>
         <nav>
-            <ul>
-                <li><a href="../index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>          
-        </nav>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+                <ul class="burger">
+                    <li><a href="../index.html">About Me</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>          
+            </nav>
     </header>
+
 
     
     <div class="input-form">
@@ -42,7 +46,15 @@
                 
             </ul>
     </footer>
-
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('.burger').toggleClass('active');
+        })
+    })
+    </script>
 
 </body>
 </html>

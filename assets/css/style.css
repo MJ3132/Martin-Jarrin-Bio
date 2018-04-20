@@ -9,6 +9,8 @@ body {
     background: url('http://www.resumaze.co/ResumazeBackgroundNew.jpeg') no-repeat  white;
     background-size: cover;
     margin: 0 auto;
+    font-size: 16px;
+    
    
     
 }
@@ -25,7 +27,7 @@ a {
 
 h1 {
     color: #1558c4;
-    font-size: 40px;
+    font-size: 2.5em;
 
 }
 
@@ -45,13 +47,13 @@ p {
 
 nav {
     float: right;
-    margin-left: 30px;
+    margin-left: 1.875em;
     width: 60%;
 }
     
 nav ul {
-    margin-top: 52px;
-    margin-left:6px;
+    margin-top: 7em;
+    margin-left:1em;
 
 
 
@@ -99,8 +101,9 @@ nav ul li a:hover {
     float: left;
     width : 35%;
     color : #18a0e0;
-    font-size: 50px;
+    font-size: 3.125em;
     margin-left: 15px;
+    margin-top: 6%;
     
   
 
@@ -151,7 +154,7 @@ nav ul li a:hover {
 
 .bio p {
     text-align: center;
-    font-size:17px;
+    font-size:1.0625em;
     color:black ;
     font-family: 'Amaranth', sans-serif;
 }
@@ -164,7 +167,7 @@ nav ul li a:hover {
 
 
 span:nth-child(1){
-    font-size: 28px;
+    font-size: 1.64em;
     font-weight: bolder;
     background: black;
     border-radius: 100%;
@@ -180,7 +183,7 @@ span:nth-child(1){
 }
 
 span {
-    font-size: 18px;
+    font-size: 1.125em;
     color: #18a0e0;
     font-weight: bold;
     text-align: center;
@@ -189,6 +192,23 @@ span {
 
 
 }
+
+.cool-facts  {
+    font-size: 1.25em;
+    
+ 
+ 
+ }
+ 
+ 
+ .cool-facts .fa:hover {
+     color: purple;
+     border-radius: 60%;
+     
+ 
+ 
+ }
+ 
 
 footer {
     clear:both;
@@ -199,27 +219,12 @@ footer {
 
 }
 
-.cool-facts  {
-   font-size: 20px;
-   
-
-
-}
-
-
-.cool-facts .fa:hover {
-    color: purple;
-    border-radius: 60%;
-    
-
-
-}
 
 
 footer ul {
     margin: 0  auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 2%;
     display: flex;
     position:relative;
    
@@ -242,13 +247,25 @@ footer ul li a {
     background: #18a0e0;
     text-align: center;
     line-height: 35px;
-    font-size: 27px;
+    font-size: 1.68em;
     margin: 0 auto;
     display: block;
     border-radius: 60%;
     overflow: hidden;
     border: 3px solid #fff;
     
+
+}
+
+
+.toggle {
+    width: 20%;
+    text-align: center; 
+    box-sizing: border-box;
+    color: lightgreen;
+    font-size: 30px;
+    display: none;    
+
 
 }
 
@@ -292,7 +309,7 @@ footer ul li a {
 .work-1, .work-2,  .work-3 {
     margin:  2% 0;
     width: 32.33%;         
-    font-size: 13px;
+    font-size: 0.81em;
    float:left;
    background: whitesmoke;
    opacity: 0.65;
@@ -307,20 +324,20 @@ footer ul li a {
 }
 
 .skills-1 {
-    font-size: 120px;
+    font-size: 9.23em;
     padding-right: 60px;
  
 }
 
 .skills-2 {
-    font-size:120px;
+    font-size:9.23em;
     margin-left: 20px;
   padding-right: 60px;
 
 }
 
 .skills-3 {
-    font-size: 120px;
+    font-size: 9.23em;
     padding-right: 45px;
 }
 
@@ -361,21 +378,18 @@ display: -webkit-flex;
 }
 
 
-@media screen and (max-width: 768px){
 
-    .project-item {
-        width :100%;
-    }
-}
+  
+
 
 
 .pic-container {
-    max-height : 150px;
+    max-height : 9.375em;
     padding-right: 4px;
 
     background: black;
     background: cover;
-    flex-basis: 38%;
+    flex-basis: 36%;
     margin: 5px;
     
 display: -webkit-box;
@@ -485,7 +499,257 @@ input:nth-child(4) {
 
 
 
+/* Mobile*/
+
+@media screen and (max-width:640px) {
+
+
+#logo {
+    width: 96%;
+    padding: 2%;
+    margin: 0 auto;
+    float: none;
+    text-align:center;
+
+}
+
+
+
+nav {
+    float: none;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    
+}
+
+    
+nav ul {
+
+width: 100%;
+display:none;
 
 
 
 
+
+}
+
+ nav ul li {
+    display : block;
+    text-align: center;
+    font-size: 20px;
+
+
+
+}
+
+
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center; 
+    box-sizing: border-box;
+    background: whitesmoke;
+    font-size: 30px;
+    display: block;   
+    height: 60px; 
+    border-radius: 100%;
+  
+
+}
+
+ .fa-bars {
+    color : salmon;
+}
+
+.active {
+    display: block;
+    margin: 0 auto;
+
+    margin-right: 35%;
+
+}
+
+.top-pic {
+    float: none;
+    max-width: 80%;
+    margin-bottom: 5px;
+
+
+}
+
+.bio {
+
+margin: 2%;
+width: 90%;
+
+}
+/* Portfolio*/
+
+
+.project-item {
+    width :98%;
+    margin: 2% auto;
+
+}
+
+/* skills*/
+
+.work-1, .work-2, .work-3 {
+    width:98%;
+    font-size: 1em;
+    padding: 2%;
+}
+
+
+
+.skills-1 {
+    font-size: 5.23em;
+    padding-right: 60px;
+ 
+}
+
+.skills-2 {
+    font-size:5.23em;
+ 
+
+}
+
+.skills-3 {
+    font-size: 5.23em;
+    
+}
+
+/*contact*/
+
+
+
+.input-form {
+    width: 98%;
+    margin:2% auto;
+    height: 40%;
+
+
+
+}
+
+.input-form input {
+    width: 80%;
+    display: block;
+   margin: 0 auto;
+   padding: 2%;
+
+   height: 14%
+
+}
+
+textarea  {
+    width: 80%;
+    height: 100px;
+    max-height: 200px;
+    display:block;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2%;
+    resize: vertical;
+
+    height: 20%;
+
+  
+    
+}
+
+
+}
+
+/*tablet*/
+
+@media screen and (min-width:641px) and (max-width:768px) {
+
+    #logo {
+        width: 96%;
+        padding: 2%;
+        margin: 0 auto;
+        float: none;
+        text-align:center;
+    
+    }
+    
+    
+    
+    nav {
+        float: none;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        
+    }
+    
+        
+    nav ul {
+    margin: 0 auto;
+    
+    
+    
+    
+    
+    }
+    
+    nav ul li {
+        display : inline-block;
+    
+    
+    
+    }
+
+
+/* skills*/
+
+.work-1, .work-2, .work-3 {
+    width:32%;
+    font-size: 1em;
+    
+}
+
+
+/* contact*/
+
+.input-form {
+    width: 60%;
+    margin:2% auto;
+    height: 40%;
+
+
+
+}
+
+.input-form input {
+    width: 80%;
+    display: block;
+   margin: 0 auto;
+   padding: 2%;
+
+   height: 14%
+
+}
+
+textarea  {
+    width: 80%;
+    height: 100px;
+    max-height: 200px;
+    display:block;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2%;
+    resize: vertical;
+
+    height: 20%;
+
+  
+    
+}
+
+
+}

@@ -14,14 +14,20 @@
     <header class="main-header">
         <h1 id="logo"><strong>Martin Jarrin</strong></h1>
         <nav>
-            <ul>
-                <li><a href="../index.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>          
-        </nav>
+            <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+
+                <ul class= "burger">
+                    <li><a href="../index.html">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>          
+            </nav>
     </header>
+
     <main>
 
         <section class "project-container" >
@@ -45,33 +51,33 @@
               </div>
             </div>
 
-                <div class="project-item clearfix">
-                     <figure class="pic-container" >
-                          <img src="https://www.kcwebspecialists.com/wp-content/uploads/2011/09/kansas-city-mobile-web-design.jpg" alt="Portfolio Picture" />
-                    </figure>
-                    <div class="project-info">
-                        <h2 class="project-name">Responsive Site</h2>
-                        <p> Test out different devices on my first responsive site!</p>
-                    </div>
+            <div class="project-item clearfix">
+                    <figure class="pic-container" >
+                        <img src="https://www.kcwebspecialists.com/wp-content/uploads/2011/09/kansas-city-mobile-web-design.jpg" alt="Portfolio Picture" />
+                </figure>
+                <div class="project-info">
+                    <h2 class="project-name">Responsive Site</h2>
+                    <p> Test out different devices on my first responsive site!</p>
                 </div>
+            </div>
 
-                <div class="project-item clearfix">
-                    <figure class="pic-container" >
-                        <img src="https://thefrontierpost.com/wp-content/uploads/2017/12/Electoral-process.png" alt="Portfolio Picture" />
-                    </figure>
-                    <div class="project-info">
-                        <h2 class="project-name">Election Simulation</h2>
-                        <p>Hover over the states and see which candidate wins!</p>
-                     
-                </div>
-                </div>
-                <div class="project-item clearfix">
-                    <figure class="pic-container" >
-                        <img src="http://lorempixel.com/200/200" alt="Portfolio Picture" />
-                    </figure>
-                    <div class="project-info">
-                        <h2 class="project-name">Project</h2>
-                         <p>Description</p>
+            <div class="project-item clearfix">
+                <figure class="pic-container" >
+                    <img src="https://thefrontierpost.com/wp-content/uploads/2017/12/Electoral-process.png" alt="Portfolio Picture" />
+                </figure>
+                <div class="project-info">
+                    <h2 class="project-name">Election Simulation</h2>
+                    <p>Hover over the states and see which candidate wins!</p>
+                    
+            </div>
+            </div>
+            <div class="project-item clearfix">
+                <figure class="pic-container" >
+                    <img src="http://lorempixel.com/200/200" alt="Portfolio Picture" />
+                </figure>
+                <div class="project-info">
+                    <h2 class="project-name">Project</h2>
+                        <p>Description</p>
                          
                     </div>
                 </div>
@@ -119,7 +125,15 @@
             </ul>
     </footer>
             
-    
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('.burger').toggleClass('active');
+        })
+    })
+    </script>   
   
     
 </body>
