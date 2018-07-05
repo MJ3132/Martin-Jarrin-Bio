@@ -14,98 +14,119 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <h1 id="logo">
-            <strong>Martin Jarrin</strong>
-        </h1>
-        <nav>
-            <div class="toggle">
-                <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
-
-            <ul class="burger">
-                <li>
-                    <a href="../index.html">About Me</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="skills.html">Skills</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <body>
-        <main>
-            <section id="work">
-                <div class="full-width">
-                    <div class="work-1">
-                        <figure class="skills-1">
-                            <i class="fa fa-html5" aria-hidden="true"></i>
-                        </figure>
-                        <h3>Hand-Coded HTML</h3>
-                        <p>My focus is writing clean, well formatted, semantic HTML5 content that is easy to read, easy to collaborate,
-                            trouble-shoot and accessible.</p>
-                    </div>
-                    <div class="work-2">
-                        <figure class="skills-2">
-                            <i class="fa fa-css3" aria-hidden="true"></i>
-                        </figure>
-                        <h3>Well-Organized CSS</h3>
-                        <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS lean and
-                            fast to load, and I make it a habit to stay up to date on current best practices.</p>
-                    </div>
-                    <div class="work-3">
-                        <figure class="skills-3">
-                            <i class="fa fa-mobile" aria-hidden="true"></i>
-                        </figure>
-                        <h3>Responsive-Web Design</h3>
-                        <p>My code adapts to all screens, in order assure that the user will be able to use properly any website
-                            no matter the device! </p>
-                    </div>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1 id="logo">
+                <strong>Martin Jarrin</strong>
+            </h1>
+            <nav>
+                <div class="toggle">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
                 </div>
-            </section>
 
-
-
-        </main>
-        <footer>
-            <ul>
-                <li>
-                    <a href="mailto:martin_jarrin@hotmail.com?Subject=subject message" target="_blank">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
+                <ul class="burger">
                     <li>
-                        <a href="https://github.com/MJ3132" target="_blank">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
+                        <a href="../index.html">About Me</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/martín-jarrin-8a91bb104/" target="_blank">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </a>
+                        <a href="portfolio.html">Portfolio</a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/mmjarrin" target="_blank">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </a>
+                        <a href="skills.html">Skills</a>
                     </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-            </ul>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.menu').click(function () {
-                    $('.burger').toggleClass('active');
-                })
-            })
-        </script>
+        <body>
+            <div class="wrapper">
+                <main>
+                    <section id="work">
+                        <div class="full-width">
+                            <div class="work-1">
+                                <figure class="skills-1">
+                                    <i class="fa fa-html5" aria-hidden="true"></i>
+                                </figure>
+                                <h3>Hand-Coded HTML</h3>
+                                <p>My focus is writing clean, well formatted, semantic HTML5 content that is easy to read, easy
+                                    to collaborate, trouble-shoot and accessible.</p>
+                            </div>
+                            <div class="work-2">
+                                <figure class="skills-2">
+                                    <i class="fa fa-css3" aria-hidden="true"></i>
+                                </figure>
+                                <h3>Well-Organized CSS</h3>
+                                <p>I pride myself on writing CSS that is easy to read and build on. I focus on keeping my CSS
+                                    lean and fast to load, and I make it a habit to stay up to date on current best practices.</p>
+                            </div>
+                            <div class="work-3">
+                                <figure class="skills-3">
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                </figure>
+                                <h3>Responsive-Web Design</h3>
+                                <p>My code adapts to all screens, in order assure that the user will be able to use properly
+                                    any website no matter the device! </p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="mailto:martin_jarrin@hotmail.com?Subject=subject message" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <li>
+                            <a href="https://github.com/MJ3132" target="_blank">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/martín-jarrin-8a91bb104/" target="_blank">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/mmjarrin" target="_blank">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                </ul>
+            </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu').click(function () {
+                $('.burger').toggleClass('active');
+                var main = document.querySelector(".main-header");
+                if ($('.burger').hasClass('active')) {
+                    main.style.height = "150px";
+                } else {
+                    main.style.height = "60px";
+                }
+            });
+        });
+
+
+        window.onscroll = function () { myFunction() };
+
+        var header = document.querySelector(".main-header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 
 
 
