@@ -353,23 +353,15 @@ footer ul li a {
 
 .project-item {
     width:45%;
-    height: 32%;
+    height: 24%;
     float: left;
     border: solid;
     margin: 2%;
- 
-
-
-
 
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
 display: -webkit-flex;
-
-    
-  
-
 }
 
 
@@ -389,16 +381,13 @@ display: -webkit-flex;
 
 }
 
-
-
 .project-info {
     width:60%;
     opacity: 0.7;
     filter: alpha(opacity=100); 
     background: whitesmoke;
     padding: none;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 
@@ -426,8 +415,6 @@ display: -webkit-flex;
     opacity: 0.85;
     margin: 2% 0;
     box-shadow: 2px black;
-
-
 }
 
 .input-form input {
@@ -446,11 +433,7 @@ textarea  {
     margin: 0 auto;
     text-align: left;
     padding: 2%;
-    resize: vertical;
-
-
-  
-    
+    resize: vertical;  
 }
 
 input:focus , textarea:focus {
@@ -468,9 +451,7 @@ input:nth-child(4):hover {
     border: none;
     text-transform: uppercase;
     font-weight: bold;
-
-    
-    
+  
 }
 
 input:nth-child(4) {
