@@ -32,9 +32,7 @@
                 <li>
                     <a href="pages/portfolio.html">Portfolio</a>
                 </li>
-                <li>
-                    <a href="pages/skills.html">Skills</a>
-                </li>
+                
                 <li>
                     <a href="pages/contact.html">Contact</a>
                 </li>
@@ -56,7 +54,7 @@
                         <span> I am curious web & self-development aficionado with a nag for learning new emerging technologies</span>
                     </p>.
                 </div>
-                <p>  Passionate about technology and how it affects our lives for the better.</p>
+                <p> Passionate about technology and how it affects our lives for the better.</p>
 
 
                 <p>My motto is :
@@ -85,6 +83,15 @@
                 <p> You can catch me in Toronto Canada, hiking, in coding meetups, playing guitar in a park, and speaking french
                     to every francophone person I meet.</p>
             </div>
+
+            <div>
+
+            </div>
+
+
+
+
+
 
 
     </main>
@@ -117,32 +124,32 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('.menu').click(function () {
-                
+
                 $('.burger').toggleClass('active');
                 var main = document.querySelector(".main-header");
-                if ($('.burger').hasClass('active')){
-                    main.style.height="150px";
+                if ($('.burger').hasClass('active')) {
+                    main.style.height = "150px";
                 } else {
-                    main.style.height="60px";
+                    main.style.height = "60px";
                 }
-                
+
             });
         });
 
 
 
-window.onscroll = function() {myFunction()};
+        window.onscroll = function () { myFunction() };
 
-var header = document.querySelector(".main-header");
-var sticky = header.offsetTop;
+        var header = document.querySelector(".main-header");
+        var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
 
 
 
