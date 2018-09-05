@@ -47,6 +47,7 @@ img {
 
 p {
     font-family: 'Anton', sans-serif;
+ 
 
 }
 
@@ -388,6 +389,7 @@ display: -webkit-flex;
     background: whitesmoke;
     padding: none;
     text-align: center;  
+
 }
 
 
@@ -568,33 +570,30 @@ width: 90%;
     margin: 2% auto;
 
 }
+.project-info p:nth-child(2){
+        display:none;
 
-/* skills*/
 
-.work-1, .work-2, .work-3 {
-    width:98%;
-    font-size: 1em;
-    padding: 2%;
+    }
+
+
+.project-name {
+
+    font-size: 1.4rem;
+}
+
+
+.project-info p {
+   
+text-align: center;  
+background-position: absolute;
+font-size:0.8rem;
 }
 
 
 
-.skills-1 {
-    font-size: 5.23em;
-    padding-right: 60px;
- 
-}
 
-.skills-2 {
-    font-size:5.23em;
- 
 
-}
-
-.skills-3 {
-    font-size: 5.23em;
-    
-}
 
 /*contact*/
 
@@ -700,13 +699,6 @@ textarea  {
     }
 
 
-/* skills*/
-
-.work-1, .work-2, .work-3 {
-    width:32%;
-    font-size: 1em;
-    
-}
 
 
 /* contact*/
