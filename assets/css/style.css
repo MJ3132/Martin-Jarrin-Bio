@@ -349,10 +349,11 @@ footer ul li a {
 
 .project-item {
     width:45%;
-    height: 24%;
+    height: 29%;
     float: left;
     border: solid;
     margin: 2%;
+    padding: 1px;
 
 display: -webkit-box;
 display: -moz-box;
@@ -389,12 +390,12 @@ display: -webkit-flex;
 
 
 .project-name{
-    font-size: 1.35em;
+    font-size: 1.3em;
 }
 
 .project-info p {
 
- font-size:1em;
+ font-size:0.9em;
     
 
 }
@@ -551,7 +552,7 @@ background:none;
     display: block;
     margin: 0 auto;
     margin-right: 35%;
-    height:200px;
+    height:10vh;
    
 
 }
