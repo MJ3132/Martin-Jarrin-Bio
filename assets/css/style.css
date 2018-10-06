@@ -349,7 +349,6 @@ footer ul li a {
 
 .project-item {
     width:45%;
-    height: 29%;
     float: left;
     border: solid;
     margin: 2%;
@@ -368,6 +367,7 @@ display: -webkit-flex;
     background: black;
     background: cover;
     flex-basis: 36%;
+    height:31%;
     margin: 5px;
     
 display: -webkit-box;
@@ -390,7 +390,7 @@ display: -webkit-flex;
 
 
 .project-name{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 .project-info p {
@@ -590,7 +590,7 @@ width: 90%;
 
 .project-name {
 
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 
@@ -598,7 +598,7 @@ width: 90%;
    
 text-align: center;  
 background-position: absolute;
-font-size : 0.9em;
+font-size : 1.3em;
 }
 
 
@@ -712,14 +712,14 @@ textarea  {
     /* tablet*/
 
     .project-name{
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
 
     .project-info p {
    
         text-align: center;  
         background-position: absolute;
-        font-size: 1em;
+        font-size: 1.6em;
         
         }
         
