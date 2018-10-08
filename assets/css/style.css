@@ -5,10 +5,9 @@
 
 
 body {
-    max-width: 960px;
     background: url('http://www.resumaze.co/ResumazeBackgroundNew.jpeg') no-repeat  white;
     background-size: cover;
-    margin: 0 auto;
+    margin: auto;
     font-size: 16px;
         
 }
@@ -47,9 +46,8 @@ p {
 }
 
 nav {
-    float: right;
-    margin-left: 1.875em;
-    width: 60%;
+    width: 100vw;
+    margin-left: 40%;
     position: relative;
     bottom: 80px;
 }
@@ -93,7 +91,6 @@ nav ul li a:hover {
 
 .main-header {
     background:url('https://linkedinbackground.com/download/xThe-Code.jpg.pagespeed.ic.V7Sqx_CLZQ.jpg')no-repeat right center;
-    width: 100%;
     overflow: hidden;
     opacity: 0.7;
     filter: alpha(opacity=100); 
@@ -109,7 +106,6 @@ nav ul li a:hover {
 
 #logo {
     float: left;
-    width : 35%;
     color : #18a0e0;
     font-size: 3.125em;
     margin-left: 15px;
@@ -173,7 +169,7 @@ nav ul li a:hover {
     width: 60%; 
     color: black;
     padding: 2%;
-    margin-bottom:10px;
+    margin: 2%;
     border: solid #18a0e0; 
     display: block;
 
@@ -354,6 +350,7 @@ footer ul li a {
     margin: 2%;
     padding: 1px;
 
+
 display: -webkit-box;
 display: -moz-box;
 display: -ms-flexbox;
@@ -366,9 +363,10 @@ display: -webkit-flex;
     padding-right: 4px;
     background: black;
     background: cover;
-    flex-basis: 36%;
-    height:31%;
+    width:40%;
     margin: 5px;
+    height:31%;
+
     
 display: -webkit-box;
 display: -moz-box;
@@ -384,8 +382,7 @@ display: -webkit-flex;
     filter: alpha(opacity=100); 
     background: whitesmoke;
     padding: none;
-    text-align: center;  
-
+    text-align: center; 
 }
 
 
@@ -484,10 +481,10 @@ input:nth-child(4) {
 
 #logo {
     width: 96%;
-    padding: 1%;
     margin: 0 auto;
     float: none;
     text-align:center;
+    font-size: none;
 
 }
 
@@ -650,18 +647,19 @@ textarea  {
 
 /*tablet*/
 
-@media screen and (min-width:641px) and (max-width:768px) {
+@media screen and (min-width:641px) and (max-width:829px) {
+
+
+
 
   .main-header{
       height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
   }
 
     #logo {
-        width: 40%;
-       font-size: 35px;
+        
+       font-size: 3em;
         margin: 0 auto;
         text-align:center;
         display: flex;
@@ -676,10 +674,9 @@ textarea  {
     
     
     nav {
-        float: none;
+        float: right;
         margin: 0;
-        width: 80%;
-        display: inline-block;
+
         justify-content: center;
         align-items: center;
         top: 10px;
@@ -711,15 +708,22 @@ textarea  {
 
     /* tablet*/
 
-    .project-name{
-        font-size: 1.8em;
-    }
+
+
+
+.project-item {
+    width: 70%;
+    float:none;
+    margin: 5% auto;
+}
+
+
 
     .project-info p {
    
         text-align: center;  
         background-position: absolute;
-        font-size: 1.6em;
+
         
         }
         
