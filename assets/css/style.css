@@ -104,6 +104,7 @@ img {
 p {
     font-family: Amaranth, sans-serif;
     line-height: 2;
+    color: whitesmoke
 
  
 
@@ -375,7 +376,7 @@ span {
      width:30%;
      margin:1% auto;
      padding: 0;
-     background-color:  grey;
+    background-color:  #18a0e0;
 
  
  }
@@ -852,7 +853,11 @@ width: 90%;
  
  }
 
+ .project-front-info p:nth-child(2){
+    display:none;
 
+
+}
 
 
 
