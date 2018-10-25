@@ -73,7 +73,7 @@ a {
 
 h1 {
 
-    font-size: 2.5em;
+ 
     font-weight: bolder;
     text-align: center;
 
@@ -118,11 +118,11 @@ nav {
 }
     
 nav ul {
-    margin-left:30%;
+    margin-left:20%;
 
     display: flex;
     position: flex-end;
-    width : 40vw;
+    width : 40%;
 
 
 }
@@ -313,7 +313,7 @@ nav ul li a:target {
 
 
 span:nth-child(1){
-    font-size: 2.4em;
+
     font-weight: bolder;
     color: black;
     font-family: 'Kaushan Script', cursive;
@@ -790,6 +790,23 @@ background:none;
 
 }
 
+
+
+span:nth-child(1){
+
+    font-weight: bolder;
+    color: black;
+    font-family: 'Kaushan Script', cursive;
+    text-align : center;
+    margin-top: auto;
+    background:white;
+    width: 100%;
+
+    font-size: 0.9em;
+
+   
+}
+
  .fa-bars {
     color : salmon;
 }
@@ -877,6 +894,7 @@ font-size : 1.3em;
     border: solid;
     margin: 2% auto;
     padding: 1px;
+    height:30%;
 
 
 
@@ -946,7 +964,7 @@ textarea  {
 
     #logo {
         
-       font-size: 3em;
+       font-size: 2em;
         margin: 0 auto;
         text-align:center;
         display: flex;
@@ -972,10 +990,10 @@ textarea  {
     
         
     nav ul {
-    margin: 0 auto;
+
     display:flex;
-    justify-content: center;
-    
+   width:50%;
+
     
     
     
