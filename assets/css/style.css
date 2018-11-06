@@ -259,6 +259,17 @@ nav ul li a:target {
 
     padding:1%;
 }
+.aboutme-button {
+    border: 2px solid black;
+   
+    background: white;
+    color: black;
+    margin: 0 auto;
+    font-size: 25px;
+    font-family: Amaranth, sans-serif;
+
+    padding:1%;
+}
 
 
 .aboutme-button:hover {
