@@ -365,6 +365,21 @@ span {
  
  }
 
+
+ .cool-facts p {
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    font-size: 1.25em;
+    text-align: center;
+    color : #18a0e0;
+   text-align: center;
+   clear:both;
+    
+ 
+
+ }
+
  .cool-facts h3 {
      line-height: 2;
  }
