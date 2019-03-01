@@ -842,6 +842,10 @@ span:nth-child(1){
 
 }
 
+#main-header{
+    height: 400px;
+}
+
 .top-pic {
     float: none;
     max-width: 80%;
@@ -872,7 +876,7 @@ margin: 0px;
      width:100%;
      margin:1% auto;
      padding: 0;
-     background-color:  grey;
+
 
  
  }
@@ -936,7 +940,7 @@ display: -webkit-flex;
 
 
 .project-front-item p{
-color: grey;
+color: white;
 }
 
 /*contact*/
@@ -1040,6 +1044,10 @@ textarea  {
     /* tablet*/
 
 
+.top-pic {
+    max-width: 53%;
+
+}
 
 
 .project-item {
