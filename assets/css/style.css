@@ -17,6 +17,14 @@ body {
 
 #particles-js {
 
+    
+    color: #18a0e0;
+    height: inherit ;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    margin: 0px;
+
 }
 
 h1 {

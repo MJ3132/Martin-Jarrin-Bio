@@ -1,19 +1,20 @@
 {
     "particles":{
         "number" : {
-            "value":50
+            "value":20
         },
         "color" :{
-            "value" : "#fff"
+            "value" : "18a0e0"
         },
         "shape": {
             "type" : "image",
             "stroke" :{
-                "width": 500,
-                "color": "#ccc"
+                "width": 100,
+                "color": "#C73838"
+                
             },
             "image":{
-                "src": "https://cdn.onlinewebfonts.com/svg/img_543604.png",
+                "src": "https://cdn2.iconfinder.com/data/icons/flat-icons-web/40/Embed_Close-512.png",
                 "width" : 300,
                 "height" : 300
             }
@@ -29,7 +30,7 @@
             }
         },
         "size" :{
-            "value" : 5,
+            "value" : 20,
             "random" : false,
             "anim" : {
                 "enable": false,
@@ -61,7 +62,7 @@
                 "mode" : "repulse"
             },
             "onclick":{
-                "enable" : true,
+                "enable" : false,
                 "mode": "push"
             }
         },

@@ -7,7 +7,7 @@
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="main.js"></script>
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -45,16 +45,27 @@
     <!-- </header> -->
     <!-- http://losangeleswebsolutions.com/images/deviceIcons.png -->
 
+    
     <div id="main-header">
+        <div id="particles-js"></div>
+            
+      
         <div class="bio">
             <h1>
+                
                 <span>
                     < Full-Stack Developer />
                 </span>
+           
             </h1>
+            
         </div>
 
-    </div>
+        <!-- <div id="particles-js"></div> -->
+
+
+     </div>
+       
     <div class="cool-facts">
         <h1>
             <a name="aboutme">Hi there, my name is Martin</a>
@@ -249,7 +260,7 @@
                     </a>
                 </h2>
                 <p>This App tells you nearby events from wherever you are!</p>
-                <p> Firebase API | HTML5 | CSS3 | Javascript </p>
+                <p> Firebase API | HTML5 | CSS3 | Javascript | Jquery </p>
             </div>
         </div>
 
@@ -313,7 +324,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+  
 
 
 
@@ -359,7 +370,11 @@
         }
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+
     <script>
+            particles = $('#particles-js');
+
         particlesJS.load('particles-js', 'particles.json', function () {
             console.log('particles.json loaded ...');
 
