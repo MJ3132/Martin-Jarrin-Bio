@@ -459,6 +459,8 @@ display: -webkit-flex;
 
 
 .pic-front-container {
+    position: relative;
+    vertical-align: top;
     
     padding-right: 4px;
   
@@ -476,6 +478,7 @@ display: -webkit-flex;
 
 
 }
+
 
 
 .project-front-info {
@@ -496,6 +499,42 @@ display: -webkit-flex;
     color: white;
 }
 
+
+.img-overlay img {
+    position: relative;
+    vertical-align: top;
+  }
+  
+  .overlay {
+    display: flex;
+
+    position: absolute;
+    color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(41, 42, 44, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .25s;
+  }
+
+  .overlay a {
+      color: white;
+      text-decoration: none;
+      font-size:1.3rem;
+  }
+  
+  .img-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .img-overlay:hover .overlay {
+    opacity: 1;
+  }
 
 
 
