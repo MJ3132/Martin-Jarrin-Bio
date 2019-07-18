@@ -646,8 +646,8 @@ footer ul li a {
 /*****portfolio page*****/
 
 .project-container {
-    width: 97%;
-    padding: 2%;
+    width: 100%;
+  
     display:flex;
     flex-flow: row wrap;
     justify-content: center;
