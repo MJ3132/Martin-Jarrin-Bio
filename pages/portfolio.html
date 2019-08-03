@@ -7,8 +7,11 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Acme|Dancing+Script|Kaushan+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
@@ -17,350 +20,653 @@
 <body>
     <!-- <header class="main-header"> -->
 
-    <nav class="main-header">
-        <h1 id="logo">
-            <strong>
-                <a href="../index.html">Martin Jarrin</a>
-            </strong>
-
-        </h1>
-
-        <ul style="display:flex;">
-
-            <li>
-                <a href="https://github.com/MJ3132" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:martin_jarrin@hotmail.com?Subject=subject message" target="_blank">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/martín-jarrin-8a91bb104/" target="_blank">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-            </li>
-
-        </ul>
-        <ul>
-            <li>
-                <a href="../index.html">About Me</a>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <!--                         
+        <nav class="nav">
+            <div class="nav-container" id="mynav-container">
+                <div class="logo">
+                    <a style="text-decoration: none;" href="/">Martin Jarrin</a>
+                </div>
+    
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i style="font-size:1.6rem;" class="fab fa-github"></i></a></li>
+                        <li> <a href="mailto:martin_jarrin@hotmail.com?Subject=subject message" target="_blank">
+                                <i style="font-size : 1.6rem;" class="fas fa-envelope"></i>
+                            </a></li>
                         <li>
-                            
-                            <a href="contact.html">Contact</a>
-                        </li> -->
-        </ul>
-    </nav>
+                            <a href="https://www.linkedin.com/in/martín-jarrin-8a91bb104/" target="_blank">
+                                <i style="font-size : 1.6rem;" class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-list">
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav();">&#9776;</a>
+            </div>
+        </nav>
     <!-- </header> -->
 
 
 
-    <section class="project-container">
+
+    <section  class="project-section-all">
+            <h1 style="text-align: center; margin-top:2rem;">All Projects</h1>
+            <br />
+          <div class="project-section-all-container">
+         
+                    <div class="project-item">
+                        <img src="../assets/images/flexday.jpg" style="max-height: 200px;" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div style="display: flex; justify-content: space-between">
+                                <h5 class="card-title">Startupfuel Landingpage</h5>
+                                <a href="" target="_blank">
+                                    <i class="fas fa-code"
+                                        style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                        aria-hidden="true"></i> </a>
+                            </div>
+                            <p class="card-text" style="font-size: 14px;">Check out the official Landing page for the company Startupfuel!
+                                repo : private :(</p>
+                            <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                <button type="button" class="btn btn-outline-info d-flex"
+                                    style="width: 100%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                    data-toggle="collapse" data-target="#project4" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    More Info
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="project4">
+                                <div class="card card-body">
+                                    <p><b>This project used the following technologies : </b></p>
+                                    <p> Unbounce | HTML5 | CSS3 | Javascript | Google Maps Js API </p>
+                                </div>
+                            </div>
+                            <div style="display:flex; margin-top:1rem;">
+                                <a style="width: 100%;" href="http://startupfuel.vc/" target="_blank"
+                                    class="btn btn-info">Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+              
+
+                
+                
+                    <div class="project-item">
+                        <img src="../assets/images/burger.jpg" style="max-height: 200px;" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div style="display: flex; justify-content: space-between">
+                                <h5 class="card-title">Burger Eater</h5>
+                                <a href="https://github.com/MJ3132/Git-Project-Awesome-" target="_blank">
+                                    <i class="fas fa-code"
+                                        style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                        aria-hidden="true"></i> </a>
+                            </div>
+                            <p class="card-text" style="font-size: 14px;">An app that allows you to customize your burger and order it!</p>
+                            <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                <button type="button" class="btn btn-outline-info d-flex"
+                                    style="width: 100%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                    data-toggle="collapse" data-target="#project5" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    More Info
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="project5">
+                                <div class="card card-body">
+                                    <p><b>This project used the following technologies :</b></p>
+                                    <p> React | HTML5 | CSS3 | Javascript | Firebase </p>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content: space-around; margin-top:1rem">
+                                <a style="width: 100%;" href="https://burger-builder-26e6b.firebaseapp.com/"
+                                    target="_blank" class="btn btn-info">Project</a>
+      
+                            </div>
+
+                        </div>
+                    </div>
+
+         
+                
+           
+
+              
+                    <div class="project-item">
+                        <img src="../assets/images/bitcoin-generator.PNG" style="max-height: 200px;" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <div style="display: flex; justify-content: space-between">
+                                <h5 class="card-title">Bitcoin Balance Generator</h5>
+                                <a href="https://github.com/MJ3132/blockcypher-s-API-financial" target="_blank">
+                                    <i class="fas fa-code"
+                                        style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                        aria-hidden="true"></i> </a>
+                            </div>
+                            <p class="card-text" style="font-size: 14px;">Check your Bitcoin account balance, make a deposit, and see a chart display of your past deposits and payments</p>
+                            <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                <button type="button" class="btn btn-outline-info d-flex"
+                                    style="width: 100%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                    data-toggle="collapse" data-target="#project6" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    More Info
+                                </button>
+                            </div>
+
+                            <div class="collapse" id="project6">
+                                <div class="card card-body">
+                                    <p><b>This project used the following technologies :</b></p>
+                                    <p> MYSQL | NODE | Express | HTML5 | CSS3 | Javascript | EJS | </p>
+                                </div>
+                            </div>
+                            <div style="display:flex; justify-content: space-around; margin-top:1rem">
+                                <a style="width: 100%;" href="https://bitcoin-info-generator.herokuapp.com/"
+                                    target="_blank" class="btn btn-info">Project</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+           
+         
+            
+                    <div class="project-item">
+                            <img src="../assets/images/toronto-hotels.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Hotels TO Flexbox website</h5>
+                                    <a href="https://github.com/MJ3132/To-hotels-flexbox/tree/master" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Check this front end website made for Hotels TO(</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project7" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project7">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3-Flexbox | SASS </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/To-hotels-flexbox/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
 
 
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="http://startupfuel.vc/" target="_blank">
-                    <img src="../assets/images/startupfuel.JPG" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Startupfuel Landingpage
-                    </a>
-                </h2>
-                <p>Check out the official Landing page for the company Startupfuel!
-                    repo : private :(
-                </p>
-                <p> HTML5 | CSS3 | SASS </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://burger-builder-26e6b.firebaseapp.com/" target="_blank">
-                    <img src="../assets/images/burger-app.PNG" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Burger Eater </h2>
-                <p>An app that allows you to customize your burger and order it!</p>
-                <p> React | HTML5 | CSS3 | Javascript | Firebase </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://bitcoin-info-generator.herokuapp.com/" target="_blank">
-                    <img src="../assets/images/bitcoin-generator.PNG" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/blockcypher-s-API-financial" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Bitcoin Balance Generator
-                    </a>
-                </h2>
-                <p>With this app you can look at your Bitcoin balance, make a deposit, and see a chart display of
-                </p>
-                <p> MYSQL | NODE | Express | HTML5 | CSS3 | Javascript | EJS | </p>
-            </div>
-        </div>
+                        <div class="project-item">
+                            <img src="../assets/images/surfprice.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Surfprise Me Event Surfing App</h5>
+                                    <a href="https://github.com/MJ3132/Project-1" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">This App tells you nearby events from wherever you are!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 100%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project8" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project8">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> Firebase API | HTML5 | CSS3 | Javascript | Jquery </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Surfprise-Me/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        
+
+                        <div class="project-item">
+                            <img src="../assets/images/newsletter.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Responsive Newsletter</h5>
+                                    <a href=" https://github.com/MJ3132/newsletter-site" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Test out different devices on my Newsletter responsive site!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/newsletter-site/index.html" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="project-item">
+                            <img src="../assets/images/keyboard.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Keyboard Drum</h5>
+                                    <a href="https://github.com/MJ3132/vanilla-javascript-drum" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Create your own beats using the keyboard as your drum!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p>  HTML5 | CSS3 | Javascript</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/vanilla-javascript-drum/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="project-item">
+                            <img src="../assets/images/pickings.png" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Responsive Converted PSD</h5>
+                                    <a href="https://github.com/MJ3132/Pickings-Responsive-Site" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">View this responsive site made from a psd!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Photoshop </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Pickings-Responsive-Site/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="project-item">
+                            <img src="../assets/images/friends.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Friend Finder Node APP</h5>
+                                    <a href="https://github.com/MJ3132/Friend-Finder-Prototype" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Take a survey that will show you who would be a compatible friend!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Javascript | Node.js </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://friends-4life.herokuapp.com/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
 
 
 
 
 
+                        <div class="project-item">
+                            <img src="../assets/images/8ball.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Magic 8Ball</h5>
+                                    <a href="https://github.com/MJ3132/Magic8-ball" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Ask this app anything and it will answer!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p>  HTML5 | CSS3 | Javascript</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Magic8-ball/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="project-item">
+                            <img src="../assets/images/bamazon.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Node Bamazon CLI</h5>
+                                    <a href="https://github.com/MJ3132/Node.js-MySQL-CLI-APP" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">A node CLI that allows you to buy a product by typing its name!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Node.js</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://drive.google.com/file/d/1O2-6SiVPpAfdd4xFFODVK4_WG9OSkIXu/view" target="_blank"
+                                        class="btn btn-info">Demo</a>
+                                </div>
+                            </div>
+                        </div>
 
 
 
 
+                        <div class="project-item">
+                            <img src="../assets/images/cat.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Lolcat clock</h5>
+                                    <a href="https://github.com/MJ3132/Lol-cat" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;"> For cat lovers, this world clock app is for you!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p>HTML5 | CSS3 | Javascript</p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Lol-cat/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
 
 
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/To-hotels-flexbox/" target="_blank">
-                    <img src="../assets/images/toronto-hotels.jpg" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/To-hotels-flexbox/tree/master" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Hotels TO Flexbox website
-                    </a>
-                </h2>
-                <p>Check this front end website made for Hotels TO</p>
-                <p> HTML5 | CSS3 | SASS </p>
-            </div>
-        </div>
+
+                        <div class="project-item">
+                            <img src="../assets/images/election.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Election Simulation</h5>
+                                    <a href="https://github.com/MJ3132/Election" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Hover over the states and see which candidate wins!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Javascript </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Election/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+
+                        </div>
+                            
+
+                            
+                        <div class="project-item">
+                            <img src="../assets/images/trains.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Train Scheduler</h5>
+                                    <a href="https://github.com/MJ3132/Train-Scheduler" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">A train schedule that tells you when a train will arrive depending on your local time</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Javascript </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/Train-Scheduler/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="project-item">
+                            <img src="../assets/images/gems.jpg" style="max-height: 200px;" class="card-img-top"
+                                alt="...">
+                            <div class="card-body">
+                                <div style="display: flex; justify-content: space-between">
+                                    <h5 class="card-title">Gem Guess</h5>
+                                    <a href="https://github.com/MJ3132/unit-4-game" target="_blank">
+                                        <i class="fas fa-code"
+                                            style="font-size:1rem; text-decoration: none; color:darkcyan;"
+                                            aria-hidden="true"></i> </a>
+                                </div>
+                                <p class="card-text" style="font-size: 14px;">Add all the gem values to reach the target number!</p>
+                                <div style="display:flex; justify-content: center; width:100%; margin:1rem 0;">
+                                    <button type="button" class="btn btn-outline-info d-flex"
+                                        style="width: 98%; justify-content: center; align-content: center; padding:2px; text-transform: capitalize; font-weight: 600; "
+                                        data-toggle="collapse" data-target="#project9" aria-expanded="false"
+                                        aria-controls="collapseExample">
+                                        More Info
+                                    </button>
+                                </div>
+    
+                                <div class="collapse" id="project">
+                                    <div class="card card-body">
+                                            <p><b>This project used the following technologies :</b></p>
+                                            <p> HTML5 | CSS3 | Javascript </p>
+                                    </div>
+                                </div>
+                                <div style="display:flex; margin-top:1rem;">
+                                    <a style="width: 100%;" href="https://mj3132.github.io/unit-4-game/" target="_blank"
+                                        class="btn btn-info">Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div style =" margin: 0 auto; padding: 5rem 2rem;">
+    
+                    <a style="width:  10rem; margin:2px;"
+                        href="../index.html" target="_blank"
+                        class="btn btn-outline-info">Home page</a>
+                
+                 </div>
 
 
 
 
+                
+                    </div>
 
-
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Surfprise-Me/" target="_blank">
-                    <img src="../assets/images/surfprise-me.png" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Project-1" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Surfprise Me Event Surfing App!</a>
-                </h2>
-                <p>This App tells you nearby events from wherever you are!</p>
-                <p> Firebase API | HTML5 | CSS3 | Javascript | Jquery </p>
-            </div>
-        </div>
-
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/newsletter-site/index.html" target="_blank">
-                    <img src="../assets/images/top-image.jpg" alt="Portfolio Picture" />
-                </a>
-
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href=" https://github.com/MJ3132/newsletter-site" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Responsive Newsletter</h2>
-                <p>Test out different devices on my Newsletter responsive site!</p>
-                <p> HTML5 | CSS3 </p>
-            </div>
-        </div>
-
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/vanilla-javascript-drum/" target="_blank">
-                    <img src="../assets/images/keyboard-drum.PNG" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/vanilla-javascript-drum" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Keyboard Drum </h2>
-                <p>Create your own beats using the keyboard as your drum!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Pickings-Responsive-Site/" target="_blank">
-                    <img src="../assets/images/pickings.png" alt="Responsive Newsletter" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Pickings-Responsive-Site" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Responsive Converted PSD</h2>
-                <p>Test this responsive site made from a psd!</p>
-                <p> HTML5 | CSS3 | Photoshop </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://friends-4life.herokuapp.com/" target="_blank">
-                    <img src="../assets/images/friend-finder.PNG" alt="Portfolio Picture" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Friend-Finder-Prototype" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Friend Finder Node APP</h2>
-                <p>Take a survey that will show you who would be a compatible friend!</p>
-                <p> HTML5 | CSS3 | Javascript | Node.js </p>
-            </div>
-        </div>
-
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Magic8-ball/" target="_blank">
-                    <img src="../assets/images/magic-8ball.png" alt="Pickings Psd" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Magic8-ball" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Magic8Ball</h2>
-                <p>Ask this app anything and it will answer!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://drive.google.com/file/d/1O2-6SiVPpAfdd4xFFODVK4_WG9OSkIXu/view" target="_blank">
-                    <img src="../assets/images/bamazonNodeCli.PNG" alt="Lol cat clock" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Node.js-MySQL-CLI-APP" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Node Bamazon CLI</h2>
-                <p>A node CLI that allows you to buy a product by typing its name!</p>
-                <p> HTML5 | CSS3 | Node.js </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Lol-cat/" target="_blank">
-                    <img src="../assets/images/lolcat.png" alt="Lol cat clock" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Lol-cat" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Lolcat clock</h2>
-                <p>For cat lovers, this world clock app is for you!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Election/" target="_blank">
-                    <img src="../assets/images/election.png" alt="Election Simulation" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Election" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Election Simulation</h2>
-                <p>Hover over the states and see which candidate wins!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/Train-Scheduler/" target="_blank">
-                    <img src="../assets/images/trainSchedule.PNG" alt="Lol cat clock" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/Train-Scheduler" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Train Scheduler</h2>
-                <p> A train schedule that tells you when a train will arrive depending on your local time!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
-        <div class="project-item clearfix">
-            <figure class="pic-container">
-                <a href="https://mj3132.github.io/unit-4-game/" target="_blank">
-                    <img src="../assets/images/gem-game.png" alt="Gem Game" />
-                </a>
-            </figure>
-            <div class="project-info">
-                <h2 class="project-name">
-                    <a href="https://github.com/MJ3132/unit-4-game" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                    </a>Gem Guess</h2>
-                <p>Add all the gem values to reach the target number!</p>
-                <p> HTML5 | CSS3 | Javascript </p>
-            </div>
-        </div>
     </section>
 
 
 
 
 
+
+
+   
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.menu').click(function () {
-                $('.burger').toggleClass('active');
-                var main = document.querySelector(".main-header");
-                if ($('.burger').hasClass('active')) {
-                    main.style.height = "150px";
-                } else {
-                    // main.style.height = "60px";
-                }
-            });
-        });
 
+        function responsiveNav() {
+            var x = document.getElementById("mynav-container");
 
+            if (x.className === "nav-container") {
+                x.className += " responsive";
 
-
-
-
-        window.onscroll = function () { myFunction() };
-
-        var header = document.querySelector(".main-header");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
             } else {
-                header.classList.remove("sticky");
+                x.className = "nav-container";
             }
         }
+
     </script>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
 
 
 </body>
