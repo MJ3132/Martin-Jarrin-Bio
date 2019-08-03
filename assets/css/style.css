@@ -346,7 +346,11 @@ margin: 10px 0;
 
 @media only screen and (max-width:658px) {
 
+    #main-header {
 
+        height: 50vh;
+
+    }
 
     .nav-container div:not(:first-child) {
         display: none;
