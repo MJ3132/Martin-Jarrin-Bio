@@ -344,7 +344,7 @@ margin: 10px 0;
 
 /*tablet*/
 
-@media only screen and (max-width:658px) {
+@media only screen and (max-width:714px) {
 
     #main-header {
 
@@ -428,18 +428,13 @@ margin: 10px 0;
 }
 
 
-.project-item {
-    width: 70%;
-    float:none;
-    margin: 5% auto;
-}
 
 
     
 
 
 .project-item {
-    width: 80%;
+    width: 65%;
   
     margin: 10px 0;
     border:1px solid darkcyan; 
