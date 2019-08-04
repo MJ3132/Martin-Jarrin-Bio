@@ -26,6 +26,12 @@ body {
     padding: 0;
 }
 
+.card-text {
+
+    min-height: 3em;
+  
+}
+
 
 
 /* Navbar section */
