@@ -206,6 +206,7 @@ button {
     align-items: center;
     justify-content: center;
     color : #18a0e0;
+    margin-bottom:10px;
     /* font-size: 3.125em; */
     /* align-items: flex-start; */
   
@@ -235,6 +236,7 @@ button {
     flex-flow: column;
     align-items: center;
     font-size: 1.25em;
+ 
     text-align: center;
     width: 100%;
     background: rgba(9, 57, 65, 0.8);
@@ -243,12 +245,11 @@ button {
     padding: 2rem;
     display:flex;
     height: inherit;
+   
 
    text-align: center;
 
     
- 
- 
  }
 
 
@@ -354,7 +355,7 @@ margin: 10px 0;
 
     #main-header {
 
-        height: 50vh;
+        height: 100vh;
 
     }
 
@@ -425,13 +426,14 @@ margin: 10px 0;
 
 .cool-facts {
 
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    padding-top : 4rem;
 }
 
-.cool-facts img {
+/* .cool-facts img {
     height: 100px;
     width: 100px;
-}
+} */
 
 
 
